@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -25,4 +25,65 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+} */
+
+body {
+  font-family: Helvetica,Arial,sans-serif;
+  color: #3b3b3b;
+  background: #f5f5f6;
+}
+/* Property Grid */
+.propertyGrid {
+  display: grid;
+  grid-gap: 1rem;
+  padding: 1rem;
+  grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 600px) {
+  .propertyGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Property Tile */
+.propertyTile {
+  overflow: hidden;
+  font-size: 24px;
+  background: #fff;
+  border-bottom: 2px solid #dcdcdd;
+  position: relative;
+}
+
+.propertyTile header,
+.propertyTile p {
+  line-height: 4rem;
+  padding: 0 1rem;
+}
+.propertyTile header img {
+  height: 2rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+.propertyTile img.background {
+  width: 100%;
+}
+
+.propertyTile button {
+  opacity: 0;
+  transition: opacity 0.35s;
+  height: 3rem;
+  line-height: 3rem;
+  border-radius: 1.5rem;
+  position: absolute;
+  bottom: 5rem;
+  left: 1rem;
+  width: calc(100% - 2rem);
+}
+
+.propertyTile:hover button {
+  opacity: 1;
+
 }
