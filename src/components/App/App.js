@@ -1,7 +1,6 @@
 import React, {
   Component
 } from 'react';
-import './reset.css';
 import './App.css';
 
 import DATA from "../../data.json"
@@ -39,8 +38,14 @@ class App extends Component {
 
   render() {
     return <div className="app">
-    <PropertyGrid properties={this.state.results} handleClick={this.saveProperty} />
-    <PropertyGrid properties={this.state.saved} handleClick={this.removeProperty} saved={true}/>
+      <div className="search-results">
+        <h3>Search Results</h3>
+        <PropertyGrid properties={this.state.results} handleClick={this.saveProperty} className="results" />
+      </div>
+      <aside>
+        <h3>My Saved Properties</h3>
+        <PropertyGrid properties={this.state.saved} handleClick={this.removeProperty} saved={true} className="saved" />
+      </aside>
     </div>
   }
 }
