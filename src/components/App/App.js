@@ -4,6 +4,7 @@ import React, {
 import './App.css';
 
 import DATA from "../../data.json"
+import PropertyGrid from "../PropertyGrid";
 
 class App extends Component {
   constructor(props) {
@@ -14,8 +15,8 @@ class App extends Component {
 
   render() {
     return <div>
-      <p>properties length: {this.properties.length}</p>
-      <p>saved length: {this.saved.length}</p>
+    <PropertyGrid properties={this.properties}/>
+    <PropertyGrid properties={this.saved}/>
     </div>
   }
 }
