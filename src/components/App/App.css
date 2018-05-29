@@ -70,6 +70,10 @@ aside {
   grid-template-columns: 1fr;
 }
 
+.propertyGrid span {
+  color: #aaa;
+}
+
 
 
  h3 {
