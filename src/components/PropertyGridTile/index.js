@@ -12,9 +12,8 @@ export default class PropertyGridTile extends React.Component {
             </header>
 
             <img src={this.props.mainImage} class="background"/>
-
             <p>{this.props.price}</p>
-            <button>Save</button>
+            <button onClick={() =>this.props.handleClick(this.props.id)}>{this.props.buttonText}</button>
         </div>
     }   
 }

@@ -1,6 +1,4 @@
-/* .App {
-  text-align: center;
-}
+/* 
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
@@ -32,6 +30,11 @@ body {
   color: #3b3b3b;
   background: #f5f5f6;
 }
+
+.app {
+  display: flex;
+  align-items: flex-start;
+}
 /* Property Grid */
 .propertyGrid {
   display: grid;
@@ -40,8 +43,13 @@ body {
   grid-template-columns: 1fr;
 }
 
+.propertyGrid.results {
+}
+.propertyGrid.saved{
+}
+
 @media screen and (min-width: 600px) {
-  .propertyGrid {
+  .propertyGrid.results {
     grid-template-columns: repeat(2, 1fr);
   }
 }
