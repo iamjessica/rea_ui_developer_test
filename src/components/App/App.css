@@ -1,30 +1,3 @@
-/* 
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-} */
-
 html {
   font-size: 10px;
 }
@@ -75,7 +48,6 @@ aside {
 }
 
 
-
  h3 {
   margin-left: 1rem;
   margin-bottom: 1rem;
@@ -105,7 +77,7 @@ aside {
 
 /* Property Tile */
 
-.propertyTile {
+.propertyGridTile {
   overflow: hidden;
   font-size: 1.6rem;
   background: #fff;
@@ -113,27 +85,27 @@ aside {
   position: relative;
 }
 
-.propertyTile header {
+.propertyGridTile header {
   line-height: 4rem;
   padding: 0 1rem;
 }
 
-.propertyTile header img {
+.propertyGridTile header img {
   height: 2rem;
   display: inline-block;
   vertical-align: middle;
 }
 
-.propertyTile img.background {
+.propertyGridTile img.background {
   width: 100%;
 }
 
-.propertyTile p {
+.propertyGridTile p {
   line-height: 6rem;
   padding: 0 2rem;
 }
 
-.propertyTile button {
+.propertyGridTile button {
   opacity: 0;
   transition: opacity 0.35s;
   height: 4rem;
@@ -149,7 +121,8 @@ aside {
   text-transform: uppercase;
 }
 
-.propertyTile:hover button {
+.propertyGridTile:hover button,
+.propertyGridTile:focus button {
   opacity: 1;
   color: #e4002b;
 }
